@@ -1,0 +1,10 @@
+# Macro File
+
+#update geometry
+/control/execute det1.mac
+#turn off visulizer
+/vis/disable
+#only print ever 10000 events
+/HPGe/event/printModulo 10000
+#run 1000000 events
+/control/loop multiRun.mac energy 3500 3500 500

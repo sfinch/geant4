@@ -1,0 +1,22 @@
+# Sets some default verbose
+
+/vis/scene/create
+#
+# Use this open statement instead for OpenGL in immediate mode.
+/vis/open OGLIX
+/vis/drawVolume
+
+/vis/viewer/set/auxiliaryEdge 1
+/vis/viewer/set/style w
+#/vis/viewer/set/background 1 1 1
+# Output an empty detector
+/vis/viewer/flush
+
+# Draw trajectories at end of event, showing trajectory points as
+# markers of size 2 pixels
+/vis/scene/add/trajectories
+/vis/modeling/trajectories/create/drawByCharge
+/vis/modeling/trajectories/drawByCharge-0/default/setDrawStepPts true
+/vis/modeling/trajectories/drawByCharge-0/default/setStepPtsSize 2
+# (if too many tracks cause core dump => /tracking/storeTrajectory 0)
+/vis/scene/endOfEventAction accumulate

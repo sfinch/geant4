@@ -1,0 +1,12 @@
+# Macro File
+
+#set particle gun to emit particles isotropically
+/HPGe/gun/rndm
+#turn off visulizer
+/vis/disable
+#only print ever 10000 events
+/HPGe/event/printModulo 10000
+#set gamma energy 
+/gun/energy 1.0 MeV
+#run 1000000 events
+/run/beamOn 1000000 

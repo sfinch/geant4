@@ -1,0 +1,17 @@
+# Macro File
+#makes 60% det#2
+
+/HPGe/det/setCrystalRad 34.10 mm
+/HPGe/det/setCrystalHalfLength 38.75 mm
+/HPGe/det/setCrystalEndRad 8. mm
+/HPGe/det/setHoleDepth 70.9 mm
+/HPGe/det/setHoleRad 5.85 mm
+
+/HPGe/det/setEndGap	4. mm
+/HPGe/det/setWindowThick 0.5 mm
+/HPGe/det/setWallThick 1.0 mm
+/HPGe/det/setShellHalfLength 52.5 mm
+
+/HPGe/det/update
+
+
